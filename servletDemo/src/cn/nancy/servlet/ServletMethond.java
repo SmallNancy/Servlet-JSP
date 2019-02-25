@@ -1,6 +1,7 @@
 package cn.nancy.servlet;
 
 import java.io.IOException;
+import java.util.Enumeration;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -27,5 +28,18 @@ public class ServletMethond extends HttpServlet {
   	System.out.println("获取协议:" + uri);
   	String s = req.getScheme();            // 获取协议
   	System.out.println(s);
+  	
+   //a 获取用户数据
+  	String name = req.getParameter("uname");
+  	String pwd = req.getParameter("pwd");
+  	System.out.println(name + ":" +pwd);
+  	
+  	Enumeration<String> euns = req.getParameterNames();
+  	
+  	// 设置响应编码格式
+  	//resp.setHeader("content-type", "text/html;charset=utf-8");
+  	resp.setContentType("text/html;charset=utf-8");
+  	resp.getWriter().write("<b>登陆成功</b>");
+  	
   }
 }
