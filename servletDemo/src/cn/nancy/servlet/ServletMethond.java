@@ -21,7 +21,9 @@ public class ServletMethond extends HttpServlet {
   	System.out.println(methond);
   	StringBuffer sb = req.getRequestURL(); // 获取URL
   	System.out.println("获取URL:" + sb);
-  	String uri = req.getRequestURI();      // 获取协议
+  	String uri = req.getRequestURI();      // 获取URI
   	System.out.println("获取协议:" + uri);
+  	String s = req.getScheme();            // 获取协议
+  	System.out.println(s);
   }
 }
