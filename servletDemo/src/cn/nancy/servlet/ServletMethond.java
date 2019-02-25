@@ -7,9 +7,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 /**
- * Servlet implementation class ServletMethond
+ * request 由tomcat服务器创建
+ * q  作用：封存了当前请求的所有请求信息
+ * @author Nancy
+ *
  */
 @WebServlet(name = "methond", urlPatterns = { "/methond" })
 public class ServletMethond extends HttpServlet {
