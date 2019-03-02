@@ -19,6 +19,8 @@
   %>
   <b> JSP so easy !!</b>
   <% } %>
+  <%@include file="StaticTest.jsp" %>
+  <jsp:include page="Dynamic.jsp"></jsp:include>
 </body>
 </html>
 
@@ -28,4 +30,6 @@
      开发：
      servlet 处理逻辑
      jsp 进行页面展示
+      静态jsp引入   <%@include file="StaticTest.jsp" %> 不会单独转译为java文件
+      动态jsp引入 ：<jsp:include page=""></jsp:include> 单独转移 可以使用同名变量
  --%>
