@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scores>
+  <student id = "1">
+    <id>01</id>
+    <name>王晓</name>
+    <course>java</course>
+    <score>89</score>
+  </student>
+  
+  <student id = "2">
+    <id>02</id>
+    <name>李三</name>
+    <course>sql</course>
+    <score>78</score>
+  </student>
+</scores>
